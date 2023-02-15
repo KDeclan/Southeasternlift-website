@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Noto Sans", sans-serif;
+  background: #2c3639;
+}
+
+a:link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:visited {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:active {
+  text-decoration: none;
+  color: aliceblue;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+nav {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.grid-logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 1;
+}
+
+#logo {
+  height: 90px;
+  padding-left: 90px;
+  padding-top: 4px;
+}
+
+.logo-text {
+  padding-left: 200px;
+  width: 100%;
+  text-align: left;
+  font-size: 60px;
+  font-weight: 900;
+  white-space: nowrap;
+  text-shadow: 5px 5px 8px black;
+  color: aliceblue;
+}
+
+.nav-additional {
+  grid-column: 3 / 3;
+  grid-row: 1 / 2;
+  text-align: center;
+  word-spacing: 200px;
+  font-size: 24px;
+  padding-top: 24px;
+  padding-right: 100px;
+  font-weight: 900;
+  text-shadow: 5px 5px 8px black;
+}
+
+.contact-grid {
+  background: #283033;
+  border: 4px solid #3f4e4f;
+  height: 60%;
+  width: 70%;
+  margin-top: 350px;
+  margin-left: 90px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+}
+
+.inside-contact-grid-top {
+  grid-column: 1 / 1;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+  font-weight: 900;
+  text-shadow: 5px 5px 8px black;
+  font-size: 40px;
+  padding-top: 0;
+  text-decoration: underline;
+}
+
+p {
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: 40px;
+  color: aliceblue;
+  font-weight: 900;
+  text-shadow: 5px 5px 8px black;
+}
+
+.inside-contact-grid-bottom {
+  grid-column: 1 / 2;
+}
+
+.text-wrapper {
+  text-align: center;
+  padding-top: 12px;
+  color: aliceblue;
+  font-weight: 900;
+  text-shadow: 5px 5px 8px black;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.text-wrapper2 {
+  padding-top: 30px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+#email-address {
+  color: aliceblue;
+  font-weight: 900;
+  text-shadow: 5px 5px 8px black;
+}
+
+@media only screen and (max-width: 768px) {
+  a:link {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  a:active {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  .body-wrapper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+  }
+
+  nav {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .grid-logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+  }
+
+  #logo {
+    position: relative;
+    top: 5.9px;
+    right: 3px;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 4px;
+  }
+
+  .logo-text {
+    padding-left: 60px;
+    padding-top: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 34px;
+    font-weight: 900;
+    white-space: nowrap;
+    text-shadow: 5px 5px 8px black;
+    color: aliceblue;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .nav-additional {
+    position: relative;
+    top: 70px;
+    left: 80px;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    text-align: center;
+    word-spacing: 50px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 200px;
+    font-weight: 900;
+    text-shadow: 5px 5px 8px black;
+    white-space: nowrap;
+  }
+
+  .contact-grid {
+    grid-column: 1 / 2;
+    background: #283033;
+    border: 4px solid #3f4e4f;
+    height: 65%;
+    width: 60%;
+    margin-left: 25px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    bottom: 250px;
+    left: 32px;
+  }
+
+  .inside-contact-grid-top {
+    grid-column: 1 / 1;
+  }
+
+  h1 {
+    text-align: center;
+    color: aliceblue;
+    font-weight: 900;
+    text-shadow: 5px 5px 8px black;
+    font-size: 30px;
+    padding-top: 0;
+    text-decoration: underline;
+    position: relative;
+    right: 10px;
+  }
+
+  p {
+    position: relative;
+    right: 5px;
+    font-size: 24px;
+    color: aliceblue;
+    font-weight: 900;
+    text-shadow: 5px 5px 8px black;
+    white-space: nowrap;
+  }
+
+  .inside-contact-grid-bottom {
+    grid-column: 1 / 2;
+  }
+
+  .text-wrapper {
+    text-align: center;
+    padding-top: 12px;
+    color: aliceblue;
+    font-weight: 900;
+    text-shadow: 5px 5px 8px black;
+    font-size: 30px;
+    text-decoration: underline;
+    position: relative;
+    right: 10px;
+  }
+
+  #email-address {
+    position: relative;
+    right: 25px;
+    top: 0px;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: 900;
+    text-shadow: 5px 5px 8px black;
+  }
+}

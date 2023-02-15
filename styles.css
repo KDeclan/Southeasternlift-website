@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Noto Sans", sans-serif;
+  color: aliceblue;
+}
+
+a:link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:visited {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:active {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 4fr 4.5fr 1.5fr;
+  height: 100vh;
+}
+
+nav {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.grid-logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 1;
+}
+
+#logo {
+  height: 90px;
+  padding-left: 90px;
+  padding-top: 4px;
+}
+
+.logo-text {
+  padding-left: 200px;
+  width: 100%;
+  text-align: left;
+  font-size: 60px;
+  font-weight: 900;
+  white-space: nowrap;
+  text-shadow: 5px 5px 8px black;
+}
+
+.nav-additional {
+  grid-column: 3 / 3;
+  grid-row: 1 / 2;
+  text-align: center;
+  word-spacing: 200px;
+  font-size: 24px;
+  padding-top: 24px;
+  padding-right: 100px;
+  font-weight: 900;
+  text-shadow: 5px 5px 8px black;
+}
+
+main {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+.main-text {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 250px;
+  font-weight: 900;
+  text-shadow: 5px 5px 8px black;
+}
+
+.bttn {
+  grid-column: 2 / 2;
+  grid-row: 3 / 3;
+}
+
+.grid-item4 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 900;
+  text-shadow: 5px 5px 8px black;
+}
+
+.buttonbg {
+  background-color: rgba(63, 78, 79);
+  border-radius: 40px;
+  color: aliceblue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer {
+  grid-column: 1 / -1;
+  grid-row: 4 / -1;
+  background: rgba(63, 78, 79, 0.5);
+  visibility: hidden;
+}
+
+.footer-grid {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: 900;
+  text-decoration: underline;
+  background-clip: padding-box;
+}
+
+@media only screen and (max-width: 768px) {
+  a:link {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  a:active {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  .body-wrapper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: aliceblue;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+  }
+
+  nav {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .grid-logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+  }
+
+  #logo {
+    position: relative;
+    top: 5.9px;
+    right: 3px;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 4px;
+  }
+
+  .logo-text {
+    padding-left: 60px;
+    padding-top: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 34px;
+    font-weight: 900;
+    white-space: nowrap;
+    text-shadow: 5px 5px 8px black;
+    color: aliceblue;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .nav-additional {
+    position: relative;
+    top: 70px;
+    left: 80px;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    word-spacing: 50px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 200px;
+    font-weight: 900;
+    text-shadow: 5px 5px 8px black;
+    white-space: nowrap;
+  }
+
+  footer {
+    grid-column: 1 / -1;
+    grid-row: 4 / -1;
+    background: rgba(63, 78, 79, 0.5);
+    visibility: hidden;
+  }
+
+  .footer-grid {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: 900;
+    text-decoration: underline;
+    background-clip: padding-box;
+    visibility: hidden;
+  }
+
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  main {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+  }
+
+  .main-text {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 900;
+    text-shadow: 5px 5px 8px black;
+    position: relative;
+    bottom: 45vh;
+    right: 5vw;
+  }
+
+  .bttn {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+  }
+
+  .grid-item4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 5px 5px 8px black;
+  }
+
+  .buttonbg {
+    background-color: rgba(63, 78, 79);
+    border-radius: 40px;
+    color: aliceblue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    right: 30px;
+    font-size: 18px;
+  }
+}
